@@ -29,7 +29,7 @@ function paintList(newPhoneNumber){
     const li = document.createElement("li");
     li.id = newPhoneNumber.id;
     const span = document.createElement("span");
-    span.innerHTML = newPhoneNumber.text;
+    span.innerHTML = "- "+ newPhoneNumber.text;
 
     // 
     noticeList += newPhoneNumber.text+',';

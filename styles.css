@@ -4,19 +4,60 @@
     margin: 0;
 }
 
+@font-face {
+    font-family: "Jua";
+    src: url("fonts/BMJUA_ttf.ttf");
+}
+
 :root{
+    --text-normal:#4a4a4a;
+    --text-header-title:#ee0b0b;
 
 }
 
-
+body{
+    background-color: #faedcd;
+    font-family: "Jua";
+    
+}
 
 .header{
     text-align: center;
+    background-color: #d4a373;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Jua";
+}
+
+.header a{
+    text-decoration: none;
+}
+.header .title{
+    font-size: 2em;
+    color: var(--text-header-title);
+}
+
+.top-explain{
+    margin: 5px 0 -15px 10px;
 }
 
 .mapStyle{
     margin-left: auto;
     margin-right: auto;
+    width: 500px;
+    height: 400px;
+}
+
+
+.explain{
+    width: 500px;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 2px solid gray;
 }
 
 .content{
@@ -32,9 +73,118 @@
     text-align: center;
 }
 
-/* 기존 map style="width:500px;height:400px;" */
-.location{
-    height: 25em;
-    
+.notice #phoneForm #phoneNumber{
+    width: 30%;
+    font-size: 0.6em;
 
 }
+
+#phoneList{
+    list-style: none;
+    padding: 0;
+}
+
+
+
+.msg-list{
+    margin-top: 1em;
+    font-size: 2em;
+    text-align: center;
+}
+
+#phoneList span{
+    font-size: 2em;
+}
+
+#phoneList button{
+    background: transparent;
+    margin-left: 5px;
+    font-size: 1.3em;
+    
+}
+
+.submit-btn{
+    font-size: 0.5em;
+}
+
+
+
+.btn{
+    border: 5px solid #0e89ec31;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width:500px) {
+    .explain{
+        width: 90%;
+        
+    }
+    
+}
+
+@media screen and (max-width:400px) {
+    .mapStyle{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 400px;
+    }
+
+    #phoneList span{
+        font-size: 1.5em;
+    }
+    
+    #phoneList button{
+        background: transparent;
+        margin-left: 5px;
+        font-size: 1em;
+        
+    }
+    
+}
+
+
+@media screen and (max-width:360px) {
+    
+
+    .notice #phoneForm #phoneNumber{
+        width: 60%;
+        font-size: 0.5em;
+    }
+}
+
+@media screen and (max-width:300px) {
+    #phoneList span{
+        font-size: 1.2em;
+    }
+    
+    #phoneList button{
+        background: transparent;
+        margin-left: 5px;
+        font-size: 0.8em;
+        
+    }
+    
+}
+
+
+@media screen and (max-width:280px) {
+    .notice #phoneForm #phoneNumber{
+        width: 60%;
+        font-size: 0.3em;
+    }
+
+    .submit-btn{
+        margin-top: 10px;
+        width: 100%;
+        font-size: 0.3em;
+    
+    }
+
+    .msg-list{
+        margin-top: 1em;
+        font-size: 1.3em;
+    }
+}
+
