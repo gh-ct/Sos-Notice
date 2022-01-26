@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoS notice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header class="header">
+        <a href="index.html">다시</a>
+        <span>SOS Notice</span>
+    </header>
+
+    <div id="map" class="mapStyle" style="width:500px;height:400px;"></div>
+
+
+    <article class="notice content">
+        <form id="phoneForm">
+            <input type="number" pattern="[0-9]+" id="phoneNumber" placeholder=" - 를 제외한 번호를 입력해주세요 ex)01012341234">
+            <button type="submit">번호 저장하기</button>
+        </form>
+    
+        <ul id="phoneList">
+    
+        </ul>
+        <p>삭제 한 리스트로 문자를 보내고 싶으시다면<br> 사이트를 종료 후에 다시 실행해주세요.</p>
+        <button class="btn">메세지 전송하기</button>
+    </article>
+
+    
+
+    
+    
+
+    <script src="key.js"></script>
+    <script src="map.js"></script>
+    <script src="list.js"></script>
+    <script src="smsnotice.js"></script>
+    
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=APIKEY&libraries=LIBRARY"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=APIKEY&libraries=services"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=APIKEY&libraries=services,clusterer,drawing"></script>
+</body>
+</html>
