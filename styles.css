@@ -13,6 +13,8 @@
     --text-normal:#4a4a4a;
     --text-header-title:#ee0b0b;
 
+    --border-color:#0e89ec31;
+
 }
 
 body{
@@ -41,6 +43,7 @@ body{
 
 .top-explain{
     margin: 5px 0 -15px 10px;
+    font-size: 0.9em;
 }
 
 .mapStyle{
@@ -73,11 +76,7 @@ body{
     text-align: center;
 }
 
-.notice #phoneForm #phoneNumber{
-    width: 30%;
-    font-size: 0.6em;
 
-}
 
 #phoneList{
     list-style: none;
@@ -100,19 +99,30 @@ body{
     background: transparent;
     margin-left: 5px;
     font-size: 1.3em;
-    
+    width: 50px;
+    border: none;
+}
+
+#phoneList button:hover{
+    border: 3px solid var(--border-color);
+    background-color: var(--border-color);
 }
 
 .submit-btn{
-    font-size: 0.5em;
+    font-size: 0.8em;
+    
 }
 
 
 
-.btn{
-    border: 5px solid #0e89ec31;
+.transmit-btn{
+    border: 5px solid var(--border-color);
+    background: transparent;
     margin-top: 1em;
     margin-bottom: 1em;
+    font-size: 1.2em;
+    padding: 10px;
+    width: 200px;
 }
 
 @media screen and (max-width:500px) {
@@ -147,11 +157,6 @@ body{
 
 @media screen and (max-width:360px) {
     
-
-    .notice #phoneForm #phoneNumber{
-        width: 60%;
-        font-size: 0.5em;
-    }
 }
 
 @media screen and (max-width:300px) {
@@ -170,10 +175,6 @@ body{
 
 
 @media screen and (max-width:280px) {
-    .notice #phoneForm #phoneNumber{
-        width: 60%;
-        font-size: 0.3em;
-    }
 
     .submit-btn{
         margin-top: 10px;
