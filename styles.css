@@ -126,9 +126,20 @@ body{
 }
 
 @media screen and (max-width:500px) {
+    /* html{
+        width: 100vh;
+    }
+    header{
+        width: 100%;
+    } */
     .explain{
-        width: 90%;
-        
+        width: 400px;
+    }
+    .mapStyle{
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        height: 400px;
     }
     
 }
@@ -155,9 +166,6 @@ body{
 }
 
 
-@media screen and (max-width:360px) {
-    
-}
 
 @media screen and (max-width:300px) {
     #phoneList span{

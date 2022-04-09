@@ -7,7 +7,7 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
 
 
-const btn = document.querySelector('.btn');
+var transmit_btn = document.querySelector('.transmit-btn');
 
 if (navigator.geolocation) {
     
@@ -17,7 +17,7 @@ if (navigator.geolocation) {
         var lat = position.coords.latitude, // 위도
             lon = position.coords.longitude; // 경도
 
-        btn.addEventListener('click', function(e) {
+        transmit_btn.addEventListener('click', function(e) {
             
             e.preventDefault();
 

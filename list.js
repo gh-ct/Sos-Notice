@@ -64,8 +64,13 @@ function phoneListSubmit(event){
 
     savePhoneLists();
 }
-
+const btn = document.querySelector(".btn");
 phoneForm.addEventListener("submit",phoneListSubmit);
+btn.addEventListener("click",function(event){
+    
+    phoneListSubmit(event)
+
+});
 
 
 const savedPhoneLists = localStorage.getItem(PHONE_LIST_KEY);
